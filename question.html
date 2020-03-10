@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question form</title>
+<link type="text/css" href="stylesheet.css">
+<style>
+* {
+background-color : skyblue;
+}
+p {
+  color : red;
+}
+input:invalid {
+  border : 2px dashed red ;
+}
+input:valid {
+  border : 2px solid black ;
+}
+textarea:invalid {
+  border : 2px dashed red ;
+}
+textarea:valid {
+  border : 2px solid black ;
+}
+</style>
+</head>
+<body>
+<!-- The content of your web page will go here -->
+<table>
+  <tr>
+    <td><img src="Images/logo.jpg" height="50" width="50"></td>
+    <td><h1>Online Shopping</h1></td>
+  </tr>
+</table>
+<nav>
+<a href="#">Home</a> |
+<a href="Contact.html">Contact</a> |
+  <a href="https://www.facebook.com/">Facebook</a> |
+</nav> <br/>
+<p> How can we help you ? </p>
+<fieldset>
+<form>
+  <label> Name : </label>
+    <input type ="text" required> <br/> <br/>
+
+
+    <select id ="simple" name="simple"  required>
+      <option> Topic </option>
+      <option> My Account </option>
+      <option> Data Privacy </option>
+    </select> <br> <br>
+    <label> Question </label> <br>
+    <textarea cols="50" rows="10"> </textarea> <br> <br>
+      <label> Email : </label>
+      <input type="email" required> <br> <br>
+      <label> Phone Number : +60 </label>
+      <input type="number" required> <br> <br>
+    <button type="submit"> Submit </button>
+    <button type="reset" > Reset </button>
+  </form>
+</fieldset>
+</body>
+</html>
